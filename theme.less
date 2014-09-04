@@ -1,0 +1,122 @@
+/*
+ * Material Brackets Theme
+ */
+
+/* Define some variables used in multiple places */
+
+@background: #fff;
+@foreground: #e91e63;
+@numbers-bar: #ede7f6;
+@numbers-bar-empty: #d1c4e9;
+@numbers-bar-highlight: #311b92;
+@active: #e8eaf6;
+
+
+/* CODE VIEW */
+
+@code-font-color: rgba(0, 0, 0, 0.80); // default editor text
+@comments: rgba(0, 0,0,0.30);
+/* COLORS */
+
+@deep-purple: #673ab7;
+@light-blue: #03a9f4;
+@pink: #e91e63;
+@green: #558b2f;
+
+/* GUTTER */
+@gutter-text: rgba(0, 0, 0, 0.50);
+@gutter-text-highlight: @light-blue;
+
+/* Code Styling */
+
+.CodeMirror, .CodeMirror-scroll {
+	background-color: @background;
+	color: @foreground;
+}
+
+.CodeMirror-focused .CodeMirror-activeline-background {
+    background: @active;
+    &.show-line-padding .CodeMirror-focused .CodeMirror-activeline-background {
+        box-shadow: inset 15px 0 0 0 #000;
+    }
+}
+
+.CodeMirror-focused .CodeMirror-activeline {
+    .CodeMirror-gutter-elt {
+        background: @numbers-bar-highlight;
+        color: #fff;
+    }
+
+}
+
+
+
+.CodeMirror-cursor {
+    border-left: 2px solid @code-font-color !important;
+}
+ 
+.cm-string, .cm-string-2, .cm-hr {color: @gutter-text;}
+
+.cm-variable-2, .cm-variable, .cm-variable-3, .cm-operator, .cm-meta, .cm-bracket { color: @light-blue;}
+
+.cm-atom { color: @pink;}
+
+.cm-keyword, .cm-qualifier, .cm-builtin, .cm-tag, .cm-quote { color: @deep-purple !important;}
+
+.cm-property {color: @code-font-color;}
+.cm-number {color: @green;}
+.cm-comment {color: @comments;}
+//.cm-error, .cm-minus {color: red;}
+
+//.cm-header {color: red;}
+.cm-link {color: ; text-decoration: underline;}
+
+.CodeMirror-linenumber {
+    color: @gutter-text;
+	background-color: @numbers-bar;
+    border-right: 1px solid #311b92;
+}
+
+.CodeMirror-gutters {
+    background-color: @numbers-bar;
+}
+
+//.CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
+//    color: red;
+//}
+
+.CodeMirror-matchingbracket, .CodeMirror-matchingtag {	
+    /* Ensure visibility against gray inline editor background */
+    background-color: transparent !important;
+	border-bottom: 1px solid @pink;
+	color: @light-blue !important;
+	
+}
+
+.CodeMirror .CodeMirror-selected {
+    background: @active;
+}
+.CodeMirror-focused .CodeMirror-selected {
+    background: @active;
+}
+
+.CodeMirror-searching {
+    background-color: transparent;
+	color: inherit !important;
+	border: 1px solid @light-blue;
+
+}
+
+
+/* Non-editor styling */
+
+#image-holder,
+#not-editor {
+    background-color: @background;
+}
+
+
+#image-holder {
+    color: @foreground;
+}
+

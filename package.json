@@ -1,0 +1,14 @@
+{
+	"name": "kmelkon.material-brackets",
+	"title": "Material Brackets",
+	"description": "A light theme inspired by Google's Material Design",
+	"homepage": "https://github.com/kmelkon/",
+	"version": "0.0.1",
+	"author" : "Karam Melkon <kmelkon@gmail.com> (http://kmelkon.com)",
+	"license": "MIT",
+	"theme": {
+		"file": "theme.less",
+		"dark": false
+	},
+	"keywords": ["theme"]
+}
