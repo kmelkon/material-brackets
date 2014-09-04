@@ -1,8 +1,8 @@
-# Seti Syntax Brackets
+# Material Brackets 
 
-A port of [Seti Syntax for Atom](https://atom.io/themes/seti-syntax) for Brackets.
+A light theme inspired from Google's Material Design for brackets
 
 ## Installation
-Use Brackets' extenstion manager to install the theme, just search for "seti"
+Use Brackets' extenstion manager to install the theme, just search for "material"
 
 ![Screenshot](https://github.com/kmelkon/material-brackets/raw/master/screenshot.png)
